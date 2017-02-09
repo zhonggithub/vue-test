@@ -134,6 +134,7 @@
 </template>
 
 <script>
+  const Bar = { template: '<div>bar</div>' };
   export default {
     props: {
       collapse : {
@@ -145,6 +146,9 @@
       return {
         
       };
+    },
+    components: {
+      'page-nav': Bar,
     },
     methods: {
       onCollapseChange: function() {

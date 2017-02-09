@@ -18,7 +18,8 @@ const entry = [
 ];
 
 const loaders = [
-  { test: /\.(less|css|scss)$/, loader: 'style!css!less'},
+  { test: /\.jsx$/, loader: 'babel-loader?cacheDirectory', include: `${__dirname}/src` },
+  { test: /\.(less|css|scss)$/, loader: 'style-loader!css-loader!less-loader'},
   { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
   { test: /\.json$/, loader: "json-loader" },
   { test: /\.vue$/, loader: 'vue-loader' },
@@ -74,7 +75,7 @@ if (process.env.NODE_ENV === 'development') {
 module.exports = {
   entry,
   resolve : {
-    extensions:['.js', '.less', '.json', '.css', '.vue'],
+    extensions:['.js', '.less', '.json', '.css', '.jsx', '.vue'],
     alias: {
     }
   },
