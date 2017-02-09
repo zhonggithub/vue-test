@@ -1,4 +1,6 @@
 import "./style.less";
+import VIcon from './icon';
+import Navigation from './Navigation';
 
 export default {
   props: {
@@ -33,12 +35,12 @@ export default {
           </div>
           {/*{this.renderSideNav()}*/}
           <div class="ant-aside-action" onClick={this.onCollapseChange}>
-            {/*{collapse ? <Icon type="right" /> : <Icon type="left" />}*/}
+            {collapse ? <VIcon iconfont='&#xe601;' style={{fontWeight: 'bold'}} /> : <VIcon iconfont='&#xe61f;' style={{fontWeight: 'bold'}} />}
           </div>
         </aside>
         <div class="ant-layout-main">
           <div class="hms-layout-nav-header">
-            {/*<Navigation />*/}
+            <Navigation/>
           </div>
           <router-view></router-view>
         </div>
