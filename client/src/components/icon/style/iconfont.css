@@ -1,0 +1,39 @@
+
+/*@font-face {
+  font-family: 'iconfont';  /* project id 229468 
+  src: url('//at.alicdn.com/t/font_ifasto7mc2lqh0k9.eot');
+  src: url('//at.alicdn.com/t/font_ifasto7mc2lqh0k9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_ifasto7mc2lqh0k9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_ifasto7mc2lqh0k9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_ifasto7mc2lqh0k9.svg#iconfont') format('svg');
+}*/
+
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1486689621877'); /* IE9*/
+  src: url('iconfont.eot?t=1486689621877#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1486689621877') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1486689621877') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1486689621877#iconfont') format('svg'); /* iOS 4.1- */
+  font-weight: normal; font-style: normal;
+}
+
+
+.iconfont, .icon-fangxiang, .icon-20151209tubiaolianxizhuanhuan091 {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fangxiang:before { content: "\e600"; }
+
+.icon-fangxiang2:before { content: "\e614"; }
+
+.icon-20151209tubiaolianxizhuanhuan09:before { content: "\e61f"; }
+
+.icon-20151209tubiaolianxizhuanhuan091:before { content: "\e601"; }
+
+.icon-fangxiang1:before { content: "\e602"; }
+
