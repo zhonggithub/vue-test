@@ -35,7 +35,7 @@ export default {
           </div>
           {/*{this.renderSideNav()}*/}
           <div class="ant-aside-action" onClick={this.onCollapseChange}>
-            {collapse ? <VIcon iconfont='&#xe601;' style={{fontWeight: 'bold'}} /> : <VIcon iconfont='&#xe61f;' style={{fontWeight: 'bold'}} />}
+            {collapse ? <VIcon type='right' /> : <VIcon type='left' />}
           </div>
         </aside>
         <div class="ant-layout-main">
