@@ -16,7 +16,7 @@ export default {
   render: function(h) {
     return (
       <div>
-        <VMenu/>
+        <VMenu style={{background: '#293542'}}/>
       </div>
     ); 
   },

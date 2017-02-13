@@ -8,6 +8,19 @@ import './style/index.less';
 
 export default {
   props: {
+    class: {
+      type: String,
+    },
+    style: {
+      type: String,
+    },
+    click: {
+      type: Function,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
 
   },
   data: function() {
@@ -20,7 +33,18 @@ export default {
       }
     },
   },
+  methods: {
+    _onClick: function(e) {
+      if (this.click) {
+        this.click(this.name, e);
+      }
+    },
+  },
   render: function(h) {
-    return (<li class='ant-menu-item'>{this.text}</li>);
+    let classTmp = 'ant-menu-item';
+    if (this.class) {
+      classTmp += ` ${this.class}`;
+    }
+    return (<li class={classTmp} onClick={this._onClick} style={this.style || {}}>{this.text}</li>);
   }
 }

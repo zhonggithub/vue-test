@@ -1,3 +1,15 @@
+.vui-menu {
+  outline: none;
+  margin: 0px;
+  padding-left: 0;
+  list-style: none;
+  z-index: 1050;
+  box-shadow: 0 1px 6px rgba(0,0,0,.2);
+  color: rgba(0,0,0,.65);
+  background: #fff;
+  line-height: 46px;
+}
+
 .menu-model-h {
   width: 100%;
   height: 48px;
@@ -11,7 +23,7 @@
 }
 
 .menu-theme-light {
-  background: red// #E1E1E1;
+  background: #E1E1E1;
 }
 
 .menu-theme-dark {
@@ -19,8 +31,27 @@
 }
 
 // menu-item
+.ant-menu-item {
+  cursor: pointer;
+  transition: all .3s ease;
+  list-style: none;
+  float: left;
+  color: rgb(174, 175, 181);
+  margin: 0;
+  padding: 0 20px;
+  position: relative;
+  display: block;
+  white-space: nowrap;
+}
+
+.ant-menu-item:hover{
+  color: rgb(255, 255, 255);
+  //font-weight: bold;
+  //text-decoration: underline;
+}
+
 .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
-    content: ""!important;
+  content: ""!important;
 }
 
 .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-item {
