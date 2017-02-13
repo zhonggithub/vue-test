@@ -45,7 +45,7 @@ export default {
     }
     classTmp += ' vui-menu';
     return (
-      <ul class={classTmp} style={this.style || {}}>
+      <ul class={classTmp} style={this.style}>
         <VMenuItem name='aa' click={this._onClick}>aaaaaaa</VMenuItem>
         <VMenuItem name='yu8' click={this._onClick} style={{background: '#293542'}}>bbba</VMenuItem> 
         <VMenuItem name='ty77' click={this._onClick}><a href='www.baidu.com'>uuuuu</a></VMenuItem>
