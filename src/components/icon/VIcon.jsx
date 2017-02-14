@@ -2,7 +2,7 @@
  * @Author: Zz
  * @Date: 2017-02-09 14:28:18
  * @Last Modified by: Zz
- * @Last Modified time: 2017-02-12 20:02:41
+ * @Last Modified time: 2017-02-14 14:25:52
  */
 import "./style/iconfont.css";
 
@@ -31,6 +31,5 @@ export default {
         style.color = this.color;
     }
     return <i class={`icon-${this.type}`} style={style}></i>
-    // return <i class="iconfont" style={this.style || {}}>{ this.iconfont }</i>
   }
 }

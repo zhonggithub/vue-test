@@ -2,8 +2,9 @@
  * @Author: Zz
  * @Date: 2017-02-09 15:47:30
  * @Last Modified by: Zz
- * @Last Modified time: 2017-02-09 22:17:56
+ * @Last Modified time: 2017-02-14 15:42:53
  */
+import Vue from 'vue';
 import './style/index.less';
 import VMenuItem from './VMenuItem';
 
@@ -19,16 +20,30 @@ export default {
     },
     style: {
       type: String,
-
     },
+    click: {
+      type: Function,
+    }
   },
   data: function() {
     return {};
   },
-  methods: {
-    _onClick(menuItemName, e) {
-      console.log(menuItemName, e);
+  computed: {
+    items: {
+      get: function() {
+        return this.$slots.default;
+      }
     },
+  },
+  methods: {
+    onMenuItemClick(keyId) {
+      if (this.click) {
+        this.click(keyId);
+      }
+    }
+  },
+  created: function() {
+    this.$eventHub.$on('menu-item-click', this.onMenuItemClick); 
   },
   render: function(h) {
     let classTmp = this.theme === "dark" ? 'menu-theme-dark' : 'menu-theme-light';
@@ -46,9 +61,7 @@ export default {
     classTmp += ' vui-menu';
     return (
       <ul class={classTmp} style={this.style}>
-        <VMenuItem name='aa' click={this._onClick}>aaaaaaa</VMenuItem>
-        <VMenuItem name='yu8' click={this._onClick} style={{background: '#293542'}}>bbba</VMenuItem> 
-        <VMenuItem name='ty77' click={this._onClick}><a href='www.baidu.com'>uuuuu</a></VMenuItem>
+        { this.items }
       </ul>
     );
   }

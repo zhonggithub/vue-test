@@ -2,7 +2,7 @@
  * @Author: Zz
  * @Date: 2017-02-09 18:03:18
  * @Last Modified by: Zz
- * @Last Modified time: 2017-02-09 22:16:18
+ * @Last Modified time: 2017-02-14 15:43:48
  */
 import './style/index.less';
 
@@ -17,7 +17,7 @@ export default {
     click: {
       type: Function,
     },
-    name: {
+    keyId: {
       type: String,
       required: true,
     },
@@ -35,9 +35,7 @@ export default {
   },
   methods: {
     _onClick: function(e) {
-      if (this.click) {
-        this.click(this.name, e);
-      }
+      this.$eventHub.$emit('menu-item-click', this.keyId);
     },
   },
   render: function(h) {

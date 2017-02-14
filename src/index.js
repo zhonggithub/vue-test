@@ -19,6 +19,7 @@ const router = new VueRouter({
   routes,
 })
 
+Vue.prototype.$eventHub= Vue.prototype.$eventHub || new Vue();
 var app = new Vue({
   el: '#app',
   router,
