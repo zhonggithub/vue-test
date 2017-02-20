@@ -2,7 +2,7 @@
  * @Author: Zz
  * @Date: 2017-02-09 18:03:18
  * @Last Modified by: Zz
- * @Last Modified time: 2017-02-14 15:43:48
+ * @Last Modified time: 2017-02-14 16:31:09
  */
 import './style/index.less';
 
@@ -21,10 +21,15 @@ export default {
       type: String,
       required: true,
     },
-
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
   data: function() {
-    return {};
+    return {
+      active: false,
+    };
   },
   computed: {
     text: {
@@ -35,6 +40,9 @@ export default {
   },
   methods: {
     _onClick: function(e) {
+      if (this.disabled) {
+        return;
+      }
       this.$eventHub.$emit('menu-item-click', this.keyId);
     },
   },

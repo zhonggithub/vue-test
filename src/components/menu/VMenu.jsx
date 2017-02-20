@@ -2,7 +2,7 @@
  * @Author: Zz
  * @Date: 2017-02-09 15:47:30
  * @Last Modified by: Zz
- * @Last Modified time: 2017-02-14 15:42:53
+ * @Last Modified time: 2017-02-14 16:38:12
  */
 import Vue from 'vue';
 import './style/index.less';
@@ -23,7 +23,25 @@ export default {
     },
     click: {
       type: Function,
-    }
+    },
+    selectedKeys: {
+      type: Array,
+      default: function() {
+        return new Array();
+      },
+    },
+    defaultSelectedKeys: {
+      type: Array,
+    },
+    openKeys: {
+      type: Array,
+      default: function() {
+        return new Array();
+      },
+    },
+    defaultOpenKeys: {
+      type: Array,
+    },
   },
   data: function() {
     return {};
@@ -37,6 +55,11 @@ export default {
   },
   methods: {
     onMenuItemClick(keyId) {
+      if (this.selectedKeys.length === 0) {
+        this.selectedKeys.push(keyId);
+      } else {
+        this.selectedKeys[0] = keyId;
+      }
       if (this.click) {
         this.click(keyId);
       }
