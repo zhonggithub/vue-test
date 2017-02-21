@@ -76,6 +76,10 @@ module.exports = {
   entry,
   resolve : {
     extensions:['.js', '.less', '.json', '.css', '.jsx', '.vue'],
+    root: [
+      path.resolve(__dirname, './node_modules'),
+      path.resolve(__dirname, './src/components')
+    ],
     alias: {
     }
   },
