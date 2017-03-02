@@ -2,9 +2,8 @@
  * @Author: Zz
  * @Date: 2017-02-09 18:03:18
  * @Last Modified by: Zz
- * @Last Modified time: 2017-02-14 16:31:09
+ * @Last Modified time: 2017-03-02 10:56:37
  */
-import './style/index.less';
 
 export default {
   props: {

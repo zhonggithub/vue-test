@@ -1,4 +1,5 @@
-import Layout from './Layout1';
+import '../style/index';
+import Layout from './Layout';
 import Navigation from './Navigation';
 import VIcon from './icon';
 

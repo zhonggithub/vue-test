@@ -2,10 +2,9 @@
  * @Author: Zz
  * @Date: 2017-02-09 15:47:30
  * @Last Modified by: Zz
- * @Last Modified time: 2017-02-14 16:38:12
+ * @Last Modified time: 2017-03-02 11:23:09
  */
 import Vue from 'vue';
-import './style/index.less';
 import VMenuItem from './VMenuItem';
 
 export default {
@@ -44,7 +43,9 @@ export default {
     },
   },
   data: function() {
-    return {};
+    return {
+      prefixCls: 'vui-menu',
+    };
   },
   computed: {
     items: {
@@ -69,19 +70,11 @@ export default {
     this.$eventHub.$on('menu-item-click', this.onMenuItemClick); 
   },
   render: function(h) {
-    let classTmp = this.theme === "dark" ? 'menu-theme-dark' : 'menu-theme-light';
-    switch(this.model) {
-      case 'horizontal': {
-        classTmp += ' menu-model-h';
-      } break;
-      case 'vertical': {
-        classTmp += ' menu-model-v';
-      } break;
-      case 'inline': {
-        classTmp += ' menu-model-i';
-      } break;
-    }
-    classTmp += ' vui-menu';
+    const classTmp = [
+      this.prefixCls,
+      this.theme === "dark" ? `${this.prefixCls}-dark` : `${this.prefixCls}-light`,
+      this.model ? `${this.prefixCls}-${this.model}` : `${this.prefixCls}-horizontal`, 
+    ];
     return (
       <ul class={classTmp} style={this.style}>
         { this.items }
