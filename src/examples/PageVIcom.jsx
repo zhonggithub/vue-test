@@ -2,7 +2,7 @@
  * @Author: Zz
  * @Date: 2017-03-02 18:11:09
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2017-03-03 13:58:53
+ * @Last Modified time: 2017-03-03 14:05:36
  */
 import { VIcon } from '../components';
 import './style';
@@ -64,9 +64,7 @@ export default {
         'swap-left',
         'swap-right',
         'swap',
-        
         'totop',
-        'upload',
         
         'verticle-left',
         'verticle-right',
@@ -89,6 +87,7 @@ export default {
         'cloud-upload-o',
         'copy',
         'delete',
+        'upload',
         'download',
         'edit',
         'enter',
