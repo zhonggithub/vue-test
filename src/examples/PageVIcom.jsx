@@ -2,7 +2,7 @@
  * @Author: Zz
  * @Date: 2017-03-02 18:11:09
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2017-03-03 14:05:36
+ * @Last Modified time: 2017-03-03 14:12:36
  */
 import { VIcon } from '../components';
 import './style';
@@ -136,10 +136,10 @@ export default {
         'android',
         'aliwangwang',
         'aliwangwang-o',
+        'shopping-cart',
         'area-chart',
         'bar-chart',
         'line-chart',
-        'shopping-cart',
         'dot-chart',
         'pie-chart',
         'bars',
@@ -176,6 +176,8 @@ export default {
         'filter',
         'frown',
         'frown-o',
+        'meh',
+        'meh-o',
         'folder',
         'folder-open',
         'github',
@@ -192,8 +194,6 @@ export default {
         'unlock',
         'logout',
         'mail',
-        'meh',
-        'meh-o',
         'message',
         'mobile',
         'paperclip',
