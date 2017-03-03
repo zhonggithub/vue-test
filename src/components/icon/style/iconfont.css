@@ -7,12 +7,12 @@
   url('iconfont.svg?t=1486902516679#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-.icon-weixin-o, .icon-weixin, .icon-appstore, .icon-apple, .icon-android, .icon-aliwangwang-o, .icon-aliwangwang 
-.icon-apple-o, icon-appstore-o, .icon-arrow-down, .icon-area-chart, .icon-arrow-left, .icon-arrow-right,
+.icon-weixin-o, .icon-weixin, .icon-appstore, .icon-apple, .icon-android, .icon-aliwangwang-o, .icon-aliwangwang,
+.icon-apple-o, .icon-appstore-o, .icon-arrow-down, .icon-area-chart, .icon-arrow-left, .icon-arrow-right,
 .icon-arrow-salt, .icon-fast-banckward, .icon-bar-chart, .icon-bars, .icon-bars-chart,
 .icon-arrow-up, .icon-book, .icon-bulb, .icon-calculator, .icon-camera-o, .icon-calendar,
-.icon-circle-up-o, .icon-camera, .icon-caret-left, .icon-caret-down, .icon-caret-right, .icon-caret-up,
-.icon-chec, .icon-check-circle, .icon-check-circle-o, .icon-check-square-o, .icon-check-square, .icon-clock-circle,
+.icon-camera, .icon-caret-left, .icon-caret-down, .icon-caret-right, .icon-caret-up,
+.icon-check, .icon-check-circle, .icon-check-circle-o, .icon-check-square-o, .icon-check-square, .icon-clock-circle,
 .icon-close, .icon-clock-circle-o, .icon-close-circle, .icon-close-circle-o, .icon-close-square-o, .icon-close-square,
 .icon-cloud, .icon-cloud-download, .icon-cloud-download-o, .icon-cloud-upload, .icon-cloud-o, .icon-code-square, .icon-cloud-upload-o,
 .icon-copy, .icon-code-square-o, .icon-credit-card, .icon-dislike-o, .icon-delete, .icon-dislike, .icon-customer-service,
@@ -20,23 +20,23 @@
 .icon-download, .icon-down-square, .icon-edit, .icon-ellipsis, .icon-enter, .icon-enviroment, .icon-exclamation,
 .icon-exception, .icon-exclamation-circle, .icon-enviroment-o, .icon-exclamation-circle-o, .icon-excle-file,
 .icon-export, .icon-eye, .icon-export1, .icon-fast-forward, .icon-eye-o, .icon-fast-backward, .icon-file,
-.icon-filet-ext, .icon-filter, .icon-forward, .icon-frown-o, .icon-folder, .icon-folder-open, .icon-frown,
+.icon-file-ext, .icon-filter, .icon-forward, .icon-frown-o, .icon-folder, .icon-folder-open, .icon-frown,
 .icon-github, .icon-hdd, .icon-heart, .icon-heart-o, .icon-in-box, .icon-home, .icon-desktop, .icon-ie,
-.icon-info, .icon-info-cirlce-o, .icon-info-cirlce, .icon-jpg-file, .icon-left, .icon-left-circle,
+.icon-info, .icon-info-circle-o, .icon-info-circle, .icon-jpg-file, .icon-left, .icon-left-circle,
 .icon-laptop, .icon-left-circle-o, .icon-left-square, .icon-left-square-o, .icon-like-o, .icon-like,
 .icon-line-chart, .icon-link, .icon-lock, .icon-logout, .icon-mail, .icon-meh, .icon-meh-o, .icon-menu-fold,
 .icon-menu-unfold, .icon-minus, .icon-minus-circle, .icon-minus-circle-o, .icon-message, .icon-minus-square, .icon-minus-square-o,
-.icon-mobile, icon-notification, icon-paperclip, .icon-pause, .icon-pause-circle, .icon-pause-circle-o,
+.icon-mobile, .icon-notification, .icon-paperclip, .icon-pause, .icon-pause-circle, .icon-pause-circle-o,
 .icon-pay-circle, .icon-pay-circle-o, .icon-pdf-file, .icon-phone, .icon-pie-chart, .icon-picture,
 .icon-play, .icon-play-circle-o, .icon-plus, .icon-plus-circle, .icon-plus-circle-o, .icon-plus-square, .icon-plus-square-o,
 .icon-power-off, .icon-ppt-file, .icon-pushpin-o, .icon-pushpin, .icon-qrcode, .icon-question, .icon-question-circle, .icon-question-circle-o,
-.icon-reload, .icon-right-circle, .icon-right, .icon-retweet, icon-right-circle-o, .icon-right-square-o, .icon-right-square,
+.icon-reload, .icon-right-circle, .icon-right, .icon-retweet, .icon-right-circle-o, .icon-right-square-o, .icon-right-square,
 .icon-save, .icon-rollback, .icon-search, .icon-setting, .icon-shrink, .icon-step-backward, .icon-step-forward, .icon-swap-right, .icon-swap, .icon-swap-left,
 .icon-totop, .icon-up, .icon-up-circle, .icon-up-circle-o, .icon-up-square, .icon-upload, .icon-up-square-o,
 .icon-sharealt, .icon-scan, .icon-shopping-cart, .icon-smile-circle, .icon-smile-o,
 .icon-star, .icon-star-o, .icon-solution, .icon-tablet, .icon-tag, .icon-tag-o, .icon-tags,
 .icon-tags-o, .icon-team, .icon-verticle-left, .icon-verticle-right, .icon-unknow-file, .icon-unlock, .icon-user, .icon-video-camera, .icon-windows, .icon-windows-o,
-.icon-word-file, icon-x {
+.icon-word-file, .icon-select, .icon-chrome, .icon-dot-chart, .icon-fax{
   font-family:"iconfont" !important;
   font-size:16px;
   font-style:normal;
@@ -45,26 +45,23 @@
 }
 
 /* 方向 */
+.icon-arrow-up:before { content: "\e611"; }
 .icon-arrow-down:before { content: "\e608"; }
 .icon-arrow-left:before { content: "\e60a"; }
 .icon-arrow-right:before { content: "\e60b"; }
 .icon-arrow-salt:before { content: "\e60c"; }
-.icon-fast-banckward:before { content: "\e60d"; }
-.icon-arrow-up:before { content: "\e611"; }
-.icon-circle-up-o:before { content: "\e617"; }
 .icon-caret-left:before { content: "\e619"; }
 .icon-caret-down:before { content: "\e61a"; }
 .icon-caret-right:before { content: "\e61b"; }
 .icon-caret-up:before { content: "\e61c"; }
-.icon-circle-down:before { content: "\e623"; }
-.icon-circle-down-o:before { content: "\e624"; }
 .icon-double-right:before { content: "\e63b"; }
 .icon-down-square-o:before { content: "\e63c"; }
 .icon-double-left:before { content: "\e63d"; }
 .icon-down:before { content: "\e63e"; }
 .icon-down-circle:before { content: "\e63f"; }
-.icon-down-circle- o:before { content: "\e640"; }
+.icon-down-circle-o:before { content: "\e640"; }
 .icon-down-square:before { content: "\e642"; }
+.icon-fast-banckward:before { content: "\e60d"; }
 .icon-fast-forward:before { content: "\e650"; }
 .icon-forward:before { content: "\e656"; }
 .icon-left:before { content: "\e667"; }
@@ -126,8 +123,8 @@
 .icon-export:before { content: "\e64d"; }
 .icon-export1:before { content: "\e64f"; }
 .icon-info:before { content: "\e663"; }
-.icon-info-cirlce-o:before { content: "\e664"; }
-.icon-info-cirlce:before { content: "\e665"; }
+.icon-info-circle-o:before { content: "\e664"; }
+.icon-info-circle:before { content: "\e665"; }
 .icon-menu-fold:before { content: "\e679"; }
 .icon-menu-unfold:before { content: "\e67a"; }
 .icon-minus:before { content: "\e67b"; }
@@ -192,7 +189,7 @@
 .icon-eye-o:before { content: "\e651"; }
 .icon-fast-backward:before { content: "\e652"; }
 .icon-file:before { content: "\e653"; }
-.icon-filet-ext:before { content: "\e654"; }
+.icon-file-ext:before { content: "\e654"; }
 .icon-filter:before { content: "\e655"; }
 .icon-frown-o:before { content: "\e657"; }
 .icon-folder:before { content: "\e658"; }
@@ -250,5 +247,5 @@
 .icon-video-camera:before { content: "\e6c8"; }
 .icon-windows:before { content: "\e6c9"; }
 .icon-windows-o:before { content: "\e6ca"; }
-.icon-x:before { content: "\e6cb"; }
+.icon-fax:before { content: "\e6cb"; }
 .icon-word-file:before { content: "\e6cc"; }
