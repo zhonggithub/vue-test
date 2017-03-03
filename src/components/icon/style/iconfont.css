@@ -44,7 +44,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-／* 方向类 *／
+/* 方向 */
 .icon-arrow-down:before { content: "\e608"; }
 .icon-arrow-left:before { content: "\e60a"; }
 .icon-arrow-right:before { content: "\e60b"; }
@@ -97,7 +97,7 @@
 .icon-verticle-left:before { content: "\e6c6"; }
 .icon-verticle-right:before { content: "\e6c7"; }
 
-／* 提示建议 *／
+/*提示建议*/
 .icon-check:before { content: "\e61d"; }
 .icon-check-circle:before { content: "\e61e"; }
 .icon-check-circle-o:before { content: "\e61f"; }
@@ -152,7 +152,7 @@
 .icon-save:before { content: "\e6a3"; }
 .icon-setting:before { content: "\e6aa"; }
 
-／* 其他 *／
+/*／* 其他 *／*/
 .icon-weixin-o:before { content: "\e6cd"; }
 .icon-weixin:before { content: "\e6ce"; }
 .icon-appstore:before { content: "\e601"; }
@@ -210,13 +210,6 @@
 .icon-laptop:before { content: "\e669"; }
 .icon-line-chart:before { content: "\e66f"; }
 .icon-link:before { content: "\e670"; }
-
-/*
-.icon-loading:before { content: "\e671"; }
-.icon-loading1:before { content: "\e672"; }
-.icon-lock:before { content: "\e673"; }
-*/
-
 .icon-lock:before { content: "\e674"; }
 .icon-logout:before { content: "\e675"; }
 .icon-mail:before { content: "\e676"; }

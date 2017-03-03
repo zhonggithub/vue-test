@@ -1,6 +1,7 @@
 import "./style.less";
 import VIcon from './icon';
 import Navigation from './Navigation';
+import SideNav from './SideNav';
 
 export default {
   props: {
@@ -34,6 +35,7 @@ export default {
             {collapse ? <img style={{marginLeft: '-28px'}} src={logo}/> : <img src={logo}/>}
           </div>
           {/*{this.renderSideNav()}*/}
+          <SideNav/>
           <div class="ant-aside-action" onClick={this.onCollapseChange}>
             {collapse ? <VIcon type='right' /> : <VIcon type='left' />}
           </div>

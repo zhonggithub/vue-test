@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
 // import Layout1 from './components/Layout1';
 import { Layout } from './components';
+import { PageVIcon } from './examples';
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -12,7 +13,8 @@ const Bar = { template: '<div>bar</div>' }
 
 const routes = [
   { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar }
+  { path: '/bar', component: Bar },
+  { path: '/icon', component: PageVIcon },
 ]
 
 const router = new VueRouter({

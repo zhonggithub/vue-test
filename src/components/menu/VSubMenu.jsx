@@ -1,15 +1,14 @@
 /*
  * @Author: Zz
- * @Date: 2017-02-09 18:03:18
+ * @Date: 2017-03-02 16:55:31
  * @Last Modified by: Zz
- * @Last Modified time: 2017-03-02 16:23:47
+ * @Last Modified time: 2017-03-02 17:41:31
  */
-
 export default {
   name: 'VMenuItem',
   props: {
-    class: {
-      type: String,
+    title: {
+      type: [Object, String],
     },
     style: {
       type: String,
@@ -20,6 +19,12 @@ export default {
     id: {
       type: String,
       required: true,
+    },
+    children: {
+      type: Array,
+      default: function() {
+        return new Array();
+      },
     },
     disabled: {
       type: Boolean,
